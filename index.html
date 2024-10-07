@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Grasping Force Estimation in Markerless Visuo-Tactile Sensors">
-  <meta property="og:title" content="Grasping Force Estimation in Markerless Visuo-Tactile Sensors"/>
-  <meta property="og:description" content="Grasping Force Estimation in Markerless Visuo-Tactile Sensors"/>
+  <meta name="description" content="Obstacle Detection with Differences of Normals in Unorganized Point Clouds for Mobile Robotics">
+  <meta property="og:title" content="Obstacle Detection with Differences of Normals in Unorganized Point Clouds for Mobile Robotics"/>
+  <meta property="og:description" content="Obstacle Detection with Differences of Normals in Unorganized Point Clouds for Mobile Robotics"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/images/EKFdiagramICINCO.png" />
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Grasping Force Estimation in Markerless Visuo-Tactile Sensors</title>
+  <title>Obstacle Detection with Differences of Normals in Unorganized Point Clouds for Mobile Robotics</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -55,40 +55,58 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Grasping Force Estimation in Markerless Visuo-Tactile Sensors</h1>
+            <h1 class="title is-1 publication-title">Obstacle Detection with Differences of Normals in Unorganized Point Clouds for Mobile Robotics</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                Julio Castaño-Amorós,
+                Edison P. Velasco-Sánchez<sup>1</sup>,
               </span>
               <span class="author-block">
-                Pablo Gil,
+                Alejandro Olivas<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                Luis F. Recalde<sup>2</sup>,
+              </span>
+              <span class="author-block">
+                Bryan S. Guevara <sup>3</sup>,
+              </span>
+              <span class="author-block">
+                Francisco A. Candelas<sup>1</sup>,
               </span>
             </div>
 
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Group of Automation, Robotics and Computer Vision (AUROVA)<br>University of Alicante</span>
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"><sup>1</sup> Group of Automation, Robotics and Computer Vision (AUROVA), University of Alicante</span>
+            </div>
+            
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"><sup>2</sup> Worcester Polytechnic Institute, Robotics Engineering</span>
+            </div>
+
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"><sup>3</sup> Instituto de Automática
+                (INAUT), Universidad Nacional de San Juan-CONICET, San Juan J5400,
+                Argentina.</span>
             </div>
 
             <div class="is-size-8 publication-authors">
-              <span class="author-block"><a href="mailto:julio.ca@ua.es" target="_blank">julio.ca@ua.es</a></span>
-              <span class="author-block"><a href="mailto:pablo.gil@ua.es" target="_blank">pablo.gil@ua.es</a></span>
+              <span class="author-block"><a href="mailto:julio.ca@ua.es" target="_blank">edison.velasco@ua.es</a></span>
             </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
                     <!-- Paper link -->
                 <span class="link-block">
-                  <a href="" target="_blank"
+                  <a href="https://ieeexplore.ieee.org/abstract/document/10309038" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper (soon)</span>
+                  <span>Paper</span>
                 </a>
               </span>
               
-               <span class="link-block">
+               <!-- <span class="link-block">
                   <a href="" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -96,11 +114,11 @@
                   </span>
                   <span>Dataset</span>
                 </a>
-              </span>
+              </span> -->
 
             <!-- Github link -->
             <span class="link-block">
-              <a href="https://github.com/AUROVA-LAB/applications/tree/main/app_force_estimation" target="_blank"
+              <a href="https://github.com/AUROVA-LAB/aurova_preprocessed/tree/master/lidar_obstacle_detection" target="_blank"
                 class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                   <i class="fab fa-github"></i>
@@ -168,7 +186,7 @@
           
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/4n441Vaq704" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/watch?v=YfjLp7IpF1M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -187,9 +205,17 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-           Tactile sensors have been used for force estimation in the past, especially Vision-Based Tactile Sensors (VBTS) have recently become a new trend due to their high spatial resolution and low cost. In this work, we have designed and implemented several approaches to estimate the normal grasping force using different types of markerless visuotactile representations obtained from VBTS. Our main goal is to determine the most appropriate visuotactile representation, based on a performance analysis during robotic grasping tasks. Our proposal has been tested on the dataset generated with our DIGIT sensors and another one obtained using GelSight Mini sensors from another state-of-the-art work. We have also tested the generalization capabilities of our best approach, called RGBmod. The results led to two main conclusions. First,
-the RGB visuotactile representation is a better input option than the depth image or a combination of the two for estimating normal grasping forces. Second, RGBmod achieved a good performance when tested on 10 unseen everyday objects in real-world scenarios, achieving an average relative error of 0.125 ± 0.153. Furthermore, we show that our proposal outperforms other works in the literature that use RGB and depth information for the same task.
-          </p>
+            In mobile robotics, there is an increasing need for algorithms that accurately identify in real-time the environment 
+            in which a robot is operating, especially when these environments are unstructured. Thus, identifying a safe navigation 
+            path is a critical aspect to ensure the safety and smooth operation of autonomous robots. In this paper, we present an 
+            algorithm for mobile robotics that identifies potential obstacles in an unstructured environment using the Difference 
+            of Normals in the point cloud generated by a 3D LiDAR sensor. The aim of our algorithm is to detect obstacles from point 
+            clouds with a fast, low-complexity approach that is specifically designed for autonomous driving applications. Our method 
+            has been shown to identify obstacles in real-time and differs from the rest of the state-of-the-art by accurately 
+            distinguishing obstacles such as potholes and sidewalks from sloping and unevenness terrain. The algorithm has been 
+            successfully tested on an ackermann robot equipped with a 128-layer Ouster OS1 LiDAR sensor. The processing time of our 
+            system is 52 ms.
+           </p>
         </div>
       </div>
     </div>
@@ -203,7 +229,7 @@ the RGB visuotactile representation is a better input option than the depth imag
     <div class="container">
         <img src="static/images/esquema.png" alt="" class="center" width="80%" height=400/>
         <h2 class="subtitle has-text-centered">
-          Diagram of our grasping force estimation method.
+          Pipeline of the obstacle filtering method using the difference of normals in point clouds.
         </h2>
 </div>
 </div>
@@ -233,18 +259,14 @@ the RGB visuotactile representation is a better input option than the depth imag
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-<!--@conference{olivas2023robust,
-  author={Alejandro Olivas. and Miguel Muñoz{-}Bañón. and Edison Velasco. and Fernando Torres.},
-  title={Robust Single Object Tracking and Following by Fusion Strategy},
-  booktitle={Proceedings of the 20th International Conference on Informatics in Control, Automation and Robotics - Volume 1: ICINCO},
-  year={2023},
-  pages={624-631},
-  publisher={SciTePress},
-  organization={INSTICC},
-  doi={10.5220/0012178900003543},
-  isbn={978-989-758-670-5},
-  issn={2184-2809},
-}-->
+        @inproceedings{velasco2023obstacle,
+          title={Obstacle Detection with Differences of Normals in Unorganized Point Clouds for Mobile Robotics},
+          author={Velasco-S{\'a}nchez, Edison and Olivas, Alejandro and Recalde, Luis F and Guevara, Bryan S and Candelas, Francisco A},
+          booktitle={2023 IEEE Seventh Ecuador Technical Chapters Meeting (ECTM)},
+          pages={1--5},
+          year={2023},
+          organization={IEEE}
+        }
     </code></pre>
     </div>
 </section>
